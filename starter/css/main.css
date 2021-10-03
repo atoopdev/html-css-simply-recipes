@@ -260,3 +260,63 @@ Navbar
 ===============
 */
 
+.navbar{
+  display: flex;
+  justify-content: center; /* horizontal align*/
+  align-items: center; /* vertical align*/
+  /* background: blue; use to see visual boundaries for debugging */
+}
+
+.nav-center{
+  width: 90vw; /* 90%*/
+  max-width: var(--max-width);
+  /* background: red; use to see visual boundaries for debugging*/
+}
+
+.nav-header{
+  height: 6rem;
+  display: flex;
+  justify-content: space-between; /* push items far away from each other. Shoves logo to left, menu icon to right*/
+  align-items: center; /* vertical align*/
+}
+
+.nav-header img{
+  width: 200px; /* make logo smaller */
+}
+
+.nav-logo{
+  /* background: red; */
+  /* align logo and menu button */
+  display: flex; 
+  align-items: center;
+}
+
+.nav-btn {
+  padding: 0.15rem 0.75rem; /* makes menu icon smaller vertically and wider horizontally*/
+}
+
+.nav-btn i{
+  font-size: 1.25rem; /* adjusts size of horizontal lines in menu button*/
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column; /* stacks links vertically*/
+}
+
+.nav-link {
+  display: block;
+  text-align: center; /* nav links now in center*/
+  text-transform: capitalize;
+  color: var(--grey-900);
+  letter-spacing: var(--letterSpacing);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+}
+nav-link:hover{
+  color: var(--primary-500); /* contact button */
+}
+.contact-link a{
+  padding: 0.15rem 1rem;
+}
