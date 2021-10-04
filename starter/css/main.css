@@ -302,6 +302,14 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column; /* stacks links vertically*/
+  height:0; /* hide nav links*/
+  overflow:hidden;
+  transition: var(--transition); /* makes it so links don't just instantly disappear*/
+}
+
+/* use to make nav links open and close */
+.show-links{
+  height: 310px; /* If you change number of links this will need to be adjusted. determined by using dev tools to verify total size of all nav links when open. Hard coded as not main function of project. */
 }
 
 .nav-link {
