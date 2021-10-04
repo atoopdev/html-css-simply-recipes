@@ -302,7 +302,7 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column; /* stacks links vertically*/
-  height:0; /* hide nav links*/
+  height:0; /* hide nav links on small screen*/
   overflow:hidden;
   transition: var(--transition); /* makes it so links don't just instantly disappear*/
 }
@@ -312,6 +312,7 @@ Navbar
   height: 310px; /* If you change number of links this will need to be adjusted. determined by using dev tools to verify total size of all nav links when open. Hard coded as not main function of project. */
 }
 
+/* container for nav-links */
 .nav-link {
   display: block;
   text-align: center; /* nav links now in center*/
@@ -327,4 +328,41 @@ nav-link:hover{
 }
 .contact-link a{
   padding: 0.15rem 1rem;
+}
+
+@media screen and (min-width:992px){
+  /* hide nav button */
+  .nav-btn{
+    display: none;
+  }
+  .navbar{
+    height: 6rem;
+  }
+  .nav-center{
+    /* switch to flex */
+    display: flex;
+    align-items: center;
+  }
+  .nav-header{
+    height: auto; /* height of actual content*/
+    margin-right: 2rem;
+  }
+  /* container for nav links */
+  .nav-links{
+    height: auto; /* links visible on big screen */
+    flex-direction: row;
+    align-items: center;
+    width: 100%; /* nav links now span across top of screen */
+  }
+
+  /* styling of indiv nav-links */
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .contact-link {
+    margin-left: auto; /* push contact button all the way to right */
+  }
 }
