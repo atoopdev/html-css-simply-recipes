@@ -366,3 +366,32 @@ nav-link:hover{
     margin-left: auto; /* push contact button all the way to right */
   }
 }
+
+/**************page styling *********************/
+.page {
+  background: red;
+}
+
+/************** footer styling *******************/
+
+.page-footer{
+  /* center horz and vert */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: var(--black);
+  color: var(--white);
+}
+
+/* cleanly centers text. was slightly too high before*/
+.page-footer p{
+  margin-bottom: 0; 
+}
+
+/* add color to links */
+.footer-logo,
+.page-footer a {
+  color: var(--primary-500);
+}
+/*  */
