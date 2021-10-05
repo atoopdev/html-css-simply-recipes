@@ -399,4 +399,41 @@ nav-link:hover{
 .page-footer a {
   color: var(--primary-500);
 }
-/*  */
+
+/************** hero ********************/
+
+/* contains background image behind header, her-container, and hero-text */
+.hero {
+  height: 40vw;
+  background: url('../assets/main.jpeg') center/cover no-repeat;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+}
+
+.hero-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); /* adds overlay to background image to make darker. Makes easier to read text.*/
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center; /* aligns text container center vertical*/
+  justify-content: center; /* aligns text container horz center */
+}
+
+.hero-text{
+  text-align: center; /* centers actual text*/
+  color: var(--white);
+}
+
+@media screen and (min-width:768px) {
+  .hero-text h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+
+}
