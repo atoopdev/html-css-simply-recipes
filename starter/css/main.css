@@ -369,7 +369,12 @@ nav-link:hover{
 
 /**************page styling *********************/
 .page {
-  background: red;
+  /* background: red; */
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem;
+  min-height: calc(100vh - (6rem + 4rem)); /* 100% minus navbar and footer - note spacing is important*/
 }
 
 /************** footer styling *******************/
