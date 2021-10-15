@@ -47,7 +47,61 @@
     <!-- end of nav -->
     <!-- main -->
     <main class="page">
-      <h1>Contact</h1>
+      <section class="contact-container">
+        <article class="contact-info">
+          <h3>Want to get in touch?</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos distinctio soluta reiciendis ea. Cum, quisquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dignissimos dolores amet eaque mollitia cum sequi? Eveniet nisi culpa vel.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, repellat!</p>
+        </article>
+        <article>
+          <form action="" class="form contact-form">
+            <!-- single form row -->
+            <div class="form-row">
+              <label for="Name" class="form-label">Your name</label>
+              <input type="text" name="name" id="name"class="form-input"/>
+            </div>
+            <!-- end of single form row -->
+
+            <!-- single form row -->
+            <div class="form-row">
+              <label for="Email" class="form-label">Email</label>
+              <input type="text" name="email" id="email"class="form-input"/>
+            </div>
+            <!-- end of single form row -->
+            <div class="form-row">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" class="form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-block">submit</button>
+          </form>
+        </article>
+      </section>
+      <div class="recipes-list">
+        <!-- all hard coded - not pulled from database -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="assets/recipes/recipe-1.jpeg" alt="food" class="img recipe-img">
+          <h5>carne asada</h5>
+          <p>Prep: 15min | Cook: 5min</p>
+        </a>
+        <!-- end of single recipe -->
+          <!-- single recipe -->
+          <a href="single-recipe.html" class="recipe">
+            <img src="assets/recipes/recipe-2.jpeg" alt="food" class="img recipe-img">
+            <h5>greek ribs</h5>
+            <p>Prep: 15min | Cook: 5min</p>
+          </a>
+          <!-- end of single recipe -->
+            <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="assets/recipes/recipe-3.jpeg" alt="food" class="img recipe-img">
+          <h5>vegetable soup</h5>
+          <p>Prep: 15min | Cook: 5min</p>
+        </a>
+        <!-- end of single recipe -->
+      </div>
+      <!-- end of recipes list -->
     </main>
     <!-- end of main -->
     <!-- footer -->

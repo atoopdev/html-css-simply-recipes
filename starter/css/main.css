@@ -556,3 +556,86 @@ margin-bottom: 1rem;
 .error-page h1{
   font-size: 9rem;
 }
+
+/* about page */
+
+.about-page h2{
+  text-transform: none;
+  font-weight: bold;
+}
+
+.about-page{
+ display: grid;
+ gap: 2rem 4rem; /*row col*/ 
+ padding-bottom: 3rem;
+}
+
+.about-img{
+  border-radius: var(--borderRadius);
+  height: 300px;
+}
+
+/* switches to 2 col at 992px */
+@media screen and (min-width:992px){
+  .about-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items:center;
+  }
+  .about-img{
+    height: 100%;
+  }
+}
+
+.featured-title{
+  text-align: center;
+}
+
+/* Contact */
+
+.contact-form{
+  width: 100%;
+  margin:0;
+}
+
+.contact-container{
+  display: grid;
+  gap: 2rem 3rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width:992px){
+  .contact-container{
+    grid-template-columns: 1fr 450px;
+    align-items: center;
+  }
+}
+
+/* tags */
+
+.tags-wrapper{
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.tag{
+  background: var(--grey-500);
+  border-radius: var(--borderRadius);
+  text-align: center;
+  color: white;
+  transition: var(--transition);
+  padding: 0.75rem 0;
+}
+
+.tag:hover{
+  background: var(--primary-500);
+}
+
+.tag h5, .tag p{
+  margin-bottom: 0;
+}
+
+.tag h5{
+  font-weight: 600;
+}
